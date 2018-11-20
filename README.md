@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">🎮 The only Front-End Performance Checklist that runs faster than the others.</h4>
+<h4 align="center">🎮 Front-End Performance Checklist giúp trang web bạn chạy nhanh hơn.</h4>
 <p align="center">Một quy tắc đơn giản: "Luôn nghĩ về hiệu suất khi thiết kế và viết code"</p>
 
 <p align="center">
