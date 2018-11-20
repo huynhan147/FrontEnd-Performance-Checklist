@@ -565,13 +565,13 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
     * 📖 [Time to First Byte (TTFB)](https://varvy.com/pagespeed/ttfb.html)
     * 🛠 [Global latency testing tool](https://latency.apex.sh)
 
-* [ ] **Cookie size:** ![medium] If you are using cookies, be sure each cookie doesn't exceed 4096 bytes and your domain name doesn't have more than 20 cookies.
+* [ ] **Kích thước Cookie:** ![medium] ếu bạn đang sử dụng cookie, hãy đảm bảo rằng mỗi cookie không vượt quá 4096 byte và tên miền của bạn không có nhiều hơn 20 cookie.
 
-    *Why:*
-    > Cookies are exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.
+    *Tại sao:*
+    > Cookie được trao đổi trong phần header HTTP giữa các máy chủ web và trình duyệt. Điều quan trọng là phải giữ kích thước cookie càng thấp càng tốt để giảm thiểu tác động đến thời gian phản hồi của người dùng.
 
-    *How:*
-    > Eliminate unnecessary cookies.
+    *Cách làm:*
+    > Loại bỏ các cookie không cần thiết.
 
     * 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
     * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
@@ -579,24 +579,23 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
     * 📖 [Website Performance: Cookies Don't Taste So Good - Monitis Blog](http://www.monitis.com/blog/website-performance-cookies-dont-taste-so-good/)
     * 📖 [Google's Web Performance Best Practices #3: Minimize Request Overhead - GlobalDots Blog](https://www.globaldots.com/googles-web-performance-best-practices-3-minimize-request-overhead/)
 
-- [ ] **Minimizing HTTP requests:** ![high] Always ensure that every file requested are essential for your website or application.
+- [ ] **Giảm thiểu các request HTTP:** ![high] Luôn đảm bảo rằng mọi tệp được yêu cầu đều cần thiết cho trang web hoặc ứng dụng của bạn.
  * 📖 [Combine external CSS](https://varvy.com/pagespeed/combine-external-css.html)
  * 📖 [Combine external JavaScript](https://varvy.com/pagespeed/combine-external-javascript.html)
 
-- [ ] **Use a CDN to deliver your assets:** ![medium] Use a CDN to deliver faster your content over the world.
+- [ ] **Sử dụng CDN để phân phối nội dung của bạn:** ![medium] Sử dụng CDN để phân phối nội dung của bạn nhanh hơn trên toàn thế giới.
 
  * 📖 [10 Tips to Optimize CDN Performance - CDN Planet](https://www.cdnplanet.com/blog/10-tips-optimize-cdn-performance/)
  * 📖 [HTTP Caching  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
 
-- [ ] **Serve files from the same protocol:** ![high] Avoid having your website serving files coming from source using HTTP on your website which is using HTTPS for example. If your website is using HTTPS, external files should come from the same protocol.
-
-- [ ] **Serve reachable files:** ![high] Avoid requesting unreachable files (404).
+- [ ] **Phân phối tệp từ cùng một giao thức:** ![high] Tránh để trang web của bạn phân phát tệp đến từ nguồn bằng cách sử dụng HTTP trên trang web của bạn đang sử dụng HTTPS chẳng hạn. Nếu trang web của bạn đang sử dụng HTTPS, các tệp bên ngoài phải đến từ cùng một giao thức.
+- [ ] **Serve reachable files:** ![high] Tránh yêu cầu các tệp không thể truy cập (404).
  * 📖 [How to avoid bad requests](https://varvy.com/pagespeed/avoid-bad-requests.html)
 
-- [ ] **Set HTTP cache headers properly:** ![high] Set HTTP headers to avoid expensive number of roundtrips between your browser and the server.
+- [ ] **Đặt tiêu đề bộ nhớ cache HTTP đúng cách:** ![high] Đặt tiêu đề HTTP để tránh số lượng vòng lặp cao giữa trình duyệt và máy chủ của bạn.
  * 📖 [Using cache-control for browser caching](https://varvy.com/pagespeed/cache-control.html)
 
-- [ ] **GZIP / Brotli compression is enabled:** ![high] Use a compression method such as Gzip or Brotli to reduce the size of your JavaScript files. With a smaller sizes file, users will be able to download the asset faster, resulting in improved performance.
+- [ ] ** Bật nén GZIP / Brotli:** ![high] Sử dụng phương pháp nén như Gzip hoặc Brotli để giảm kích thước tệp JavaScript của bạn. Với tệp kích thước nhỏ hơn, người dùng sẽ có thể tải xuống nội dung nhanh hơn, dẫn đến hiệu suất được cải thiện.
 
  * 🛠 [Check GZIP compression](https://checkgzipcompression.com/)
  * 🛠 [Check Brotli Compression](https://tools.keycdn.com/brotli-test)
@@ -605,7 +604,7 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
 **[⬆ back to top](#table-of-contents)**
 
 ---
-## Performances and JS Frameworks
+## Performances và JS Frameworks
 
 ### Angular
  * 📖 [Angular Performance Checklist](https://github.com/mgechev/angular-performance-checklist)
@@ -624,12 +623,12 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
 
 * 🛠 [Test Your Website Speed | WordPress Hosting by @WPEngine](https://wpengine.com/speed-tool/)
 
-#### Articles
+#### Các bài viết
 
  * 📖 [19 Tips to Speed Up WordPress Performance (Updated)](https://www.wpbeginner.com/wordpress-performance-speed/)
  * 📖 [Speed Up Your WordPress - How to Save Images Optimized for Web](https://www.wpbeginner.com/beginners-guide/speed-wordpress-save-images-optimized-web/)
 
-#### Plugins recommended
+#### Plugins đươc đề xuất
 
 * 🛠 [Caching Plugin for WordPress - Speed up your website with WP Rocket](https://wp-rocket.me/)
 * 🛠 [WP-Sweep | WordPress.org](https://wordpress.org/plugins/wp-sweep/)
@@ -637,9 +636,9 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
 
 ---
 
-## Translations
+## Bản dịch
 
-The Front-End Performance Checklist wants to also be available in other languages! Don't hesitate to submit your contribution!
+Front-End Performance Checklist cũng muốn có các bản dịch bằng các ngôn ngữ khác! Đừng ngần ngại gửi đóng góp của bạn!
 
 * 🇵🇹 Portuguese: [fernandofawkes/Front-End-Performance-Checklist](https://github.com/fernandofawkes/Front-End-Performance-Checklist)
 * 🇨🇳 Chinese: [JohnsenZhou/Front-End-Performance-Checklist](https://github.com/JohnsenZhou/Front-End-Performance-Checklist)
@@ -648,40 +647,40 @@ The Front-End Performance Checklist wants to also be available in other language
 * 🇰🇷 Korean: [ParkSB/Front-End-Performance-Checklist](https://github.com/ParkSB/Front-End-Performance-Checklist)
 * 🇪🇸 Spanish: [dagerzuga/Front-End-Performance-Checklist](https://github.com/dagerzuga/Front-End-Performance-Checklist)
 
-## Contributing
+## Đóng góp
 
-**Open an issue or a pull request to suggest changes or additions.**
+**Mở một issue hoặc một pull request để đề xuất thay đổi hoặc bổ sung.**
 
-## Support
+## Hỗ trợ
 
-If you have any question or suggestion, don't hesitate to use Discord or Twitter:
+Nếu bạn có bất kỳ câu hỏi hoặc gợi ý nào, đừng ngại kết nối với tôi qua Discord hoặc Twitter:
 
 * [Chat on Discord](https://discord.gg/btHQRkm)
 * [Facebook](https://www.facebook.com/frontendchecklist/)
 * [Twitter](https://twitter.com/thedaviddias)
 
-## Author
+## Tác giả
 
-**Build with ❤️ by [David Dias](https://github.com/thedaviddias) at [@influitive](https://influitive.com/) 🇨🇦**
+**Được xây dựng bởi ❤️ [David Dias](https://github.com/thedaviddias) at [@influitive](https://influitive.com/) 🇨🇦**
 
-## Contributors
+## Cộng tác viên
 
-This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
+Dự án này tồn tại nhờ tất cả những người đóng góp. [[Contribute]](.github/CONTRIBUTING.md).
 <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist/graphs/contributors">
     <img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" />
 </a>
 
 
-## Backers
+## Người ủng hộ
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
+Cảm ơn tất cả những người ủng hộ chúng tôi! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
 
 <a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890"></a>
 
 
-## Sponsors
+## Nhà tài trợ
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/front-end-checklist#sponsor)]
+Hỗ trợ dự án này bằng cách trở thành nhà tài trợ. Logo của bạn sẽ hiển thị ở đây với một liên kết đến trang web của bạn. [[Become a sponsor](https://opencollective.com/front-end-checklist#sponsor)]
 
 <a href="https://opencollective.com/front-end-checklist/sponsor/0/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/1/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg"></a>
