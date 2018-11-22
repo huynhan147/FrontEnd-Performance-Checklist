@@ -121,7 +121,7 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
 - [ ] **Xóa nhận xét không cần thiết:** ![low] Đảm bảo rằng các nhận xét được xóa khỏi các trang của bạn.
 
     *Tại sao:*
-    > Comments are not really useful for the user and should be removed from production files. One case where you want to keep comments could be if you need to keep the origin for a library.
+    > Các comment không thực sự hữu dụng đối với người dùng và nên được loại bỏ khỏi những file trên production. Một trường hợp mà bạn muốn giữ lại các comments nguồn gốc cho một thư viện.
 
     *Cách làm:*
     > ⁃ Phần lớn các nhận xét có thể được xóa bằng cách sử dụng plugin rút gọn HTML.
@@ -185,12 +185,12 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
     *Cách làm:*
     > ⁃ Sử dụng các công cụ để tự động rút gọn các tệp của bạn trước hoặc trong quá trình build hoặc deploy.
 
-    * 🛠 [cssnano: A modular minifier based on the PostCSS ecosystem. - cssnano](https://cssnano.co/)
+    * 🛠 [ cssnano: Một modular tối giản dựa trên hệ thống PostCSS. - cssnano](https://cssnano.co/)
     * 🛠 [@neutrinojs/style-minify - npm](https://www.npmjs.com/package/@neutrinojs/style-minify)
-    * 🛠 [Online CSS Compressor](http://refresh-sf.com)
+    * 🛠 [ Nén CSS online](http://refresh-sf.com)
 
 
-- [ ] **Concatenation:** ![medium] Các tệp CSS được nối vào một tệp *(Not always valid for HTTP/2)*.
+- [ ] **sự liên hệ:** ![medium] Các tệp CSS được nối vào một tệp *(Không phải lúc nào cũng phù hợp với HTTP/2)*.
 
     ```html
 
@@ -209,7 +209,7 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
     > ⁃ Sử dụng công cụ trực tuyến hoặc bất kỳ plugin nào trước hoặc trong quá trình build hoặc deploy của bạn để ghép nối các tệp của bạn. <br>
     ⁃ Đảm bảo và chắc chắn rằng việc ghép nối không phá vỡ dự án của bạn.
 
-    * 📖 [HTTP: Optimizing Application Delivery - High Performance Browser Networking (O'Reilly)](https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2)
+    * 📖 [ HTTP: Tối ưu hóa việc phân phối các ứng dụng - High Performance Browser Networking (O'Reilly) (O'Reilly)](https://hpbn.co/optimizing-application-delivery/#optimizing-for-http2)
     * 📖 [Performance Best Practices in the HTTP/2 Era](https://deliciousbrains.com/performance-best-practices-http2/)
 
 - [ ] **Non-blocking:** ![high] Tệp CSS cần phải không bị chặn để ngăn DOM mất thời gian tải.
@@ -224,10 +224,10 @@ Danh sách các công cụ bạn có thể sử dụng để kiểm tra hoặc t
     *Cách làm:*
     > ⁃ Bạn cần thêm thuộc tính `rel` với giá trị` preload` và thêm `as =" style "` vào phần tử `<link>`.
 
-    * 🛠 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
-    * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
+    * 🛠 [loadCSS của nhóm filament](https://github.com/filamentgroup/loadCSS)
+    * 📖 [Ví dụ về việc tải trước CSS sử dụng loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
     * 📖 [Preloading content with rel="preload"](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content)
-    * 📖 [Preload: What Is It Good For? — Smashing Magazine](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/)
+    * 📖 [Preload: Nó tốt cho cái gì? — Smashing Magazine](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/)
 
 - [ ] **Độ dài của các class CSS:** ![low] Độ dài của các class của bạn có thể có tác động (nhẹ) trên các tệp HTML và CSS của bạn.
     *Tại sao:*
